@@ -1,10 +1,21 @@
 import React from 'react';
+import './Editor.css';
 
-const Editor = ()=>{
+const Editor = (props)=>{
+//    const HandleChange = ()=>{
+      
+//     } 
+console.log(props.marked);
+
     return(
-        <div>
-            Hello from Editor
-        </div>
+           <textarea  id="editor"
+            onChange ={props.onChange}
+            value={props.markedown}
+            type="text"
+            />
+            
+           
+        
     )
 }
 export default Editor;

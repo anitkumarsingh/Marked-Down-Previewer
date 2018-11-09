@@ -1,8 +1,13 @@
 import React from 'react';
 
-const Preview = () =>{
-    return(
-        <div>Hello Preview</div>
-    )
+
+
+
+const Preview = (props) =>{
+    return (
+        <div>
+            {props.marked}
+        </div>
+      )
 }
 export default Preview;
