@@ -4,6 +4,7 @@ import Editor from './Components/Editor/Editor';
 import Preview from './Components/Previewer/Preview';
 import marked from 'marked';
 import Toolbar from './Components/Toolbar/Toolbar';
+import Footerbar from './Components/FooterBar/Footerbar';
 
 
 marked.setOptions({
@@ -37,15 +38,17 @@ class App extends Component {
       <div className="container-fluid" id="container-root">
         <div className="row">
         <div className="col">
-            <Toolbar text="Editor"/>
+            <Toolbar text="Editor" icon="fas fa-edit"/>
             <Editor 
             onChange ={this.changeHandler}
             marked ={this.state.marked}
             />
+            <Footerbar/>
         </div>
         <div className="col-8">
-            <Toolbar text="Preview"/>
+            <Toolbar text="Preview" icon="far fa-thumbs-up"/>
             <Preview  marked={this.state.marked}/>
+            <Footerbar/>
         </div>
        </div>
       </div>

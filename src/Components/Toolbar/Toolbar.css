@@ -1,4 +1,13 @@
 .toolbar-container{
     background: dodgerblue;
     /* margin-left: 5%; */
+    box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+    height: 30px;
+    border:none;
+    text-align: center;
+    padding: 2px 0px 2px 0px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    color: white;
 }
