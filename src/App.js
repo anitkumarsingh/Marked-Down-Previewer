@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 import Editor from './Components/Editor/Editor';
 import Preview from './Components/Previewer/Preview';
+import marked from 'marked';
 
 
+marked.setOptions({
+  breaks: true,
+});
 
-const placeholder = `Hello World`;
+const placeholder = `Hello World 
+## Heading here`;
 
 class App extends Component {
   constructor(){
