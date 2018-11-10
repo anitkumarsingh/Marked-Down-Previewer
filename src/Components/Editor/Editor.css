@@ -1,5 +1,8 @@
 #editor{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     position: relative;
     top: 10%;
+    width:100%;
+    overflow: auto;
+    height: 80vh;
 }

@@ -1,3 +1,7 @@
+#container-root{
+  position: absolute;
+  top: 50px;
+}
 .App {
   text-align: center;
   display: inline-flex;

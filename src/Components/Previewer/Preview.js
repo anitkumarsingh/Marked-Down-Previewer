@@ -1,5 +1,6 @@
 import React from 'react';
 import marked from 'marked';
+import './Previewer.css';
 
 const Preview = (props) =>{
     return (
