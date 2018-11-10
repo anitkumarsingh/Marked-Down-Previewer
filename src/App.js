@@ -17,7 +17,33 @@ marked.setOptions({
   smartypants: false,
 });
 
-const placeholder = `# Welcome to my mark down previewer`;
+const placeholder = `# Welcome to mark down preview
+## Coded by Anit Kumar
+![](https://avatars1.githubusercontent.com/u/24611589?s=460&v=4)
+**Bold Text**
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+###### Links
+[My github account](http://github.com/anitkumarsingh)
+
+###### Blockquotes
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+- - -
+
+_You **can** combine them_
+* Bullet 1
+* Bullet 2
+  * Bullet 2a
+  * Bullet 2b
+* Bullet 3
+`;
 
 class App extends Component {
   constructor(){
