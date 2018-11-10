@@ -5,6 +5,7 @@ import Preview from './Components/Previewer/Preview';
 import marked from 'marked';
 import Toolbar from './Components/Toolbar/Toolbar';
 import Footerbar from './Components/FooterBar/Footerbar';
+import Particles from 'react-particles-js';
 
 
 marked.setOptions({
@@ -36,6 +37,19 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid" id="container-root">
+       <Particles className="Particle"
+                  params={{
+                        particles: {
+                            number:{
+                                value:30,
+                                density:{
+                                    enable:true,
+                                    value_area:150
+                                }
+                            }
+                        }
+                    }}
+                />
         <div className="row">
         <div className="col">
             <Toolbar text="Editor" icon="fas fa-edit"/>

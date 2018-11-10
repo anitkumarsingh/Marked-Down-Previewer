@@ -5,5 +5,5 @@
     overflow: auto;
     box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
     transition: 0.2s box-shadow ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
-    background: rgba(122, 342, 22, 0.2)
+    background: white;
 }
